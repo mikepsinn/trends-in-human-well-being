@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long-Term Trends in Human Well-Being</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/annotations.js"></script>
+    <link href="../human-well-being.css" rel="stylesheet">
+</head>
+<body>
+<div id="long-term-container"></div>
+<div id="gdp-start-container"></div>
+<div id="gdp-annotations-container"></div>
+<div id="gdp-end-container"></div>
+<div id="life-expectancy-annotations-container"></div>
+<div id="us-life-expectancy-ama-container"></div>
+<div id="fda-container"></div>
+<div style="margin: auto; text-align: left; max-width: 800px;">
+    <h1>
+        The Health Explosion
+    </h1>
+    <p>
+        The average lifespan was around 28 years for thousands of years. The first modern medical schools
+        that applied modern statistical methods to research were founded around 1800. This is when the first vaccines
+        were developed and test. This was the first time in recorded history that lifespan began to consistently
+        increase. Then around 190
+    </p>
+    <h2>
+        The U.S. Pharmacopoeia
+    </h2>
+    <p>At the turn of the twentieth century, pharmacy was a young and immature science. Most drugs were still created by
+       hand in a local pharmacy. Technologies to assess and create uniformity in drugs often did not exist. Indeed, a
+       major task of nineteenth- and early twentieth-century pharmacy was to define what a drug was and to create
+       standards of composition, purity, and strength. Pioneering efforts in this direction had begun in 1820 with the
+       creation of the
+        <a href="https://www.fdareview.org/features/glossary/#usp"><i>U.S. Pharmacopoeia</i> (<i>USP</i>)</a>
+       . A private, voluntary undertaking of physicians, pharmacists and colleges of pharmacy, the <i>USP</i> presented
+       a formulary of compositions and listed chemical compounds, crude drugs, fixed oils, and other substances
+       typically kept by a pharmacist (then called a pharmaceutist or an apothecary). Later the <i>USP</i> listed tests
+       for determining purity. Leading pharmacists regularly revised the
+        <a href="https://www.fdareview.org/features/glossary/#usp"><i>USP</i></a>
+       as new and better drugs, compositions, and tests were discovered and created.
+    </p>
+    <h2>
+        The American Medical Association
+    </h2>
+    <p>
+        Medical men interested in advancing
+        their crafts and the dignity of their professions formed themselves into state medical societies and
+        pharmaceutical associations, the American Medical Association (AMA, 1848), and the American Pharmaceutical
+        Association (APA, 1852). The major societies and associations often published journals, collaborated with
+        medical
+        schools, and sometimes maintained committees on drug adulteration to check drug samples and to publicize
+        information.
+    </p>
+    <h2>
+        The National Formulary
+    </h2>
+    <p>
+        Pharmacists compiled the
+        <a href="https://www.fdareview.org/features/glossary/#formulary"><i>National Formulary</i></a>
+        , first published by the APA in 1888. The <i>Formulary</i> has functioned since 1896 to provide standards for
+        drugs omitted from the <i>USP</i> and to serve as a proving ground for drugs eventually transferred to the
+        <i>USP</i>. (On the earlier history of the <i>USP</i> and <i>National Formulary</i> see
+        <a href="https://www.fdareview.org/features/references/#sonnedecker70">Sonnedecker 1970</a>
+        .)
+    </p>
+    You shouldn't feel bad. You gave us a lot and worked really hard to make our lives easier than yours. Also, all
+    our actions are a function of the design of our brains. The particular arrangement of neurons in our brains
+    are a function of our genes in combination with our environment during cognitive development. None of us have
+    control over our genes or initial environment.
+    Also, our actions are the result of molecular interactions within the
+    neurons in our brains. The molecules in our brains are governed by the laws of physics.
+    The laws of physics only allow the molecules to behave in one way.
+    If they behaved in any other way, they would be breaking the laws of physics.
+    Thus, even though we make choices, there's only one choice we can make without violating the laws of physics.
+    Therefore, no free will, and no reason to feel bad about anything.
+    <p>But before the twentieth century there was no direct federal regulation of drugs or other consumer products. In
+       1848, Congress forbade the importation of adulterated drugs, but the law quickly became moribund, as the drug
+       examiners were usually untrained political spoilsmen (
+        <a href="https://www.fdareview.org/features/references/#young70">Young 1970, 151</a>
+       ). The Reconstruction years saw the formation of the U.S. Department of Agriculture Bureau of Chemistry, the
+       predecessor of the FDA. Consisting of only a few men, the bureau did little more than request customs inspections
+       of imported foods and to a lesser extent drugs. In 1883, the bureau got a righteous and rambunctious chief in
+       Harvey Washington Wiley, who campaigned for federal laws.
+    </p>
+    <h1>The End of the Health Explosion</h1>
+    <p>Like most Americans, you likely take comfort in knowing that drugs marketed in the United States are available to
+       the public because clinical research studies have demonstrated they are not only safe, but also actually
+       effective at treating the indicated condition.&nbsp; You may not have known this, but you have the
+        <a title="Kefauver-Harris Amendment  "
+           href="http://www.fda.gov/ForConsumers/ConsumerUpdates/ucm322856.htm"
+           target="_blank"
+           rel="nofollow">Kefauver-Harris Amendment
+        </a>
+       to thank for this luxury.&nbsp;
+    </p>
+
+    <p>From 1938 until 1962 when the amendment was passed, there was no
+       requirement for drug manufacturers to demonstrate they actually worked.  Manufacturers of drugs could market their products in the United States solely by
+       demonstrating they were safe for humans.&nbsp; </p>
+    <p>
+        The Drug Efficacy Amendment, this amendment was signed into law in 1962 also required manufacturers
+       to provide proof of effectiveness of their drugs prior to approval.
+    </p>
+    <p>The primary reason the amendment was passed in the United States was due to the
+        <a title="Thalidomide Tragedy"
+           href="https://helix.northwestern.edu/article/thalidomide-tragedy-lessons-drug-safety-and-regulation"
+           target="_blank"
+           rel="nofollow">Thalidomide Tragedy
+        </a>
+       that occurred in Europe.&nbsp; The drug thalidomide became available over-the-counter in Germany starting in
+       1957.&nbsp; By 1960, it was marketed in 46 countries (but not the US) to treat nausea associated with morning
+       sickness during pregnancy.&nbsp; Unfortunately, the potential side effects for using it this way were not fully
+       understood.&nbsp; As a result, thousands of children were born with birth defects, most notably phocomelia (limb
+       malformations).&nbsp; Eventually, it ceased to be used to treat pregnant woman, but not until after an estimated
+       2,000 child deaths and over 10,000 cases of birth defects were noted.&nbsp; Despite this occurring in Europe, the
+       United States took notice and sought to tighten our regulatory approval process of new drugs.&nbsp; The
+       Kefauver-Harris Drug Amendment is the primary means by which this occurred.&nbsp;
+    </p>
+    <p>To this day, new drugs, and now also new medical devices, must be proven safe and effective before FDA will
+       approve them for use with humans.</p>
+    <p>
+        The Thalidomide disaster occurred in the 50's producing many flipper babies and scaring the hell out of
+        everyone.
+    </p>
+    <figure style="margin: auto; text-align: center;" class="wpb_wrapper vc_figure">
+        <div class="vc_single_image-wrapper vc_box_border_grey">
+            <img width="160"
+                 height="253"
+                 src="thalidomide-flipper-baby.jpg"
+                 class="vc_single_image-img attachment-large"
+                 alt="Baby with phocomelia at the four limbs."
+                 sizes="(max-width: 160px) 100vw, 160px">
+        </div>
+    </figure>
+    <p>
+        Prior to this, putting drugs on the market required a few years of safety testing on animals. Then they were
+        made available and efficacy trials were basically crowd-sourced for free. Case studies from patients were
+        compiled and published by the American Medical Association etc. Often unanticipated benefits of drugs are
+        unknown until people started using them.
+    </p>
+    <h3>FDA Safety Restrictions Dramatically Expanded in 1962</h3>
+    <p>
+        Following the Thalidomide disaster, the FDA began requiring 3 phases of clinical trials that spanned many years
+        to slow down the availability and make sure they caught any major side effects (like flippers) before the
+        drugs were approved.
+    </p>
+    <h4>Kefauver–Harris Amendments to the Federal Food, Drug, and Cosmetic Act</h4>
+    <p>
+        The amendments granted the FDA the power to demand proof of efficacy before approving a drug.
+        These powers were also tied to the orderly sequence of phase 1, phase 2, and phase 3 trials now comprising
+        the standard pharmaceutical life cycle.
+    </p>
+    <h4>Delayed Life-Saving Treatments</h4>
+    <p>
+        One unanticipated consequence of the amendments was that the new burden
+        of proof made the process of drug development both more expensive and much longer, leading to
+        increasing drug prices and a “drug lag”.
+        After that point, whenever they released some new cancer or heart medication that was going to save 50
+        thousand lives a year, it meant that over the previous 10 years of trials 500 people died because they didn't
+        have
+        access to the drug earlier.
+    </p>
+    <h4>Fewer Life-Saving Treatments</h4>
+    <p>
+        Another unanticipated consequence of the amendments was that the new burden
+        of proof made drug development much more expensive and riskier for investors. This lead to
+        and increase drug prices.
+    </p>
+    <iframe width="718" height="613.5" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBkVrOYLxloOIADLXA7-k5NBIGgQ_dfFQ7BLUN0oaJPVQ_NqdFdVUfhuPkVWgFZ9gfLrwPdjuG1sTn/pubchart?oid=522101508&amp;format=interactive">
+    </iframe>
+    <h4>Increase in Patent Monopoly</h4>
+    <p>
+        Industry agitation surrounding the “drug lag” finally led to modification of the drug patenting
+        system in the Drug Price Competition and Patent Term Restoration Act of 1984. This further extended of drug
+        patents.
+        Thus Kefauver's amendments ultimately affected both pharmaceutical pricing and patenting —
+        in a manner diametrically opposed to the one he intended.
+    </p>
+    <h4>Decreased Ability to Determine Comparative Efficacy</h4>
+    <p>
+        Another unintended consequence of the amendments was that the new structures of proof changed not only the
+        behavior of the pharmaceutical industry, but also the conceptual categories used by biomedical researchers
+        around the world. Pharmaceutical research came to be overwhelmingly organized around the placebo-controlled,
+        randomized controlled trial. Although this system has greatly helped researchers gauge the efficacy of an
+        individual drug, it has also rendered data on comparative efficacy much more difficult — and much more expensive
+        — to find or produce.
+    </p>
+    <h4>Recent Efforts at Comparing Efficacy</h4>
+    <p>
+        Only in the past decade, through the action of the Reforming States Group, the Drug
+        Effectiveness Research Program, and most recently funding of comparative effectiveness research through the
+        American Recovery and Reinvestment Act, the Affordable Care Act, and now the Patient-Centered Outcomes Research
+        Institute, have we begun to catch up on the vital project of comparing therapeutics so that American consumers
+        and their physicians can make meaningful treatment decisions — the project that motivated Kefauver's original
+        investigations a half-century ago.
+    </p>
+    <h3>Growth In Lifespan Was Cut in Half</h3>
+    <p>
+        As a result of the slowed pace of the development of new life-saving treatments, the annual increase in
+        human
+        lifespan was cut in half from it's previous 4 year increase down to 2 years per decade.
+    </p>
+    <iframe width="718" height="718" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBkVrOYLxloOIADLXA7-k5NBIGgQ_dfFQ7BLUN0oaJPVQ_NqdFdVUfhuPkVWgFZ9gfLrwPdjuG1sTn/pubchart?oid=945262371&amp;format=interactive">
+    </iframe>
+    <h3>FDA Mandate is Not to Maximize Lives Saved</h3>
+    <p>
+        Increasing lifespan is not the congressional mandate of the FDA. Its mandate is to ensure the "safety and
+        efficacy of drugs and medical devices".
+        It has been very successful at fulfilling its mandate.
+    </p>
+    <p>
+        However,
+        if you reduce the speed limit to 1 mile per hour, it will be much safer for everyone and you could reduce
+        traffic fatalities by 40k per year.
+        However, there is an economic and societal cost to only moving 1 mph that would likely exceed the safety
+        benefit. Likewise, if you dramatically slow the development of life-saving treatments, you will avoid the
+        risk
+        of flipper babies. But lots of people with AIDS and cancer will die while waiting for treatment.
+    </p>
+    <h3>Cognitive Bias Against Acts of Commission</h3>
+    <p>
+        Humans have a cognitive bias towards weighting harmful acts of commission to be worse than acts of omission
+        even
+        if the act of omission causes greater harm. It's seen in the trolley problem where people generally aren't
+        willing to push a fat man in front of a train to save a family even though more lives would be saved.
+    </p>
+    <h3>High Cost of Development Favors Monopoly and Punishes Innovation</h3>
+    <p>
+        There's another problem with increasing costs of treatment development. In the past, a genius scientist
+        could
+        come up with a treatment, raise a few million dollars and do safety testing. Now that it costs a billion
+        dollars
+        to get a drug to market, the scientist has to persuade one of a few giant drug companies that can afford it
+        to
+        buy his patent. Then the drug company has 2 options:
+    </p>
+    <h4>Option 1: Risk $1 billion on clinical trials</h4>
+    <p>
+        <b>Possibility A:</b> Drug turns out to be one of the 90% the FDA rejects. GIVE BANKER A BILLION DOLLARS. DO NOT
+                              PASS GO.
+    </p>
+    <p>
+        <b>Possibility B:</b> Drug turns out to be one of the 10%, the FDA approves. Yay!!! Now it's time to try to
+                              recover that
+                              billion dollars.
+                              However, there are very few drug companies with enough money to survive this game.
+                              So, this company almost certainly
+                              already has an existing crappier drug on the market to treat the same condition.
+                              Hence, any profit they make from
+                              this drug will likely be subtracting from revenue from other drugs they've already spent a
+                              billion dollars on.
+    </p>
+    <h4>Option 2: Put the patent on the shelf</h4>
+    <p>
+        Do not take a 90% chance of wasting a billion dollars on failed trials.
+        Do not risk making your already approved cash-cow drugs obsolete.
+    </p>
+    <p>
+        What's the benefit of bringing better treatment to market if you're just going to lose a billion dollars?
+        Either way, the profit incentive is entirely in favor of just buying better treatments and shelving them.
+    </p>
+    <h3>Cures Are Far Less Profitable Than Lifetime Treatments</h3>
+    <p>
+        Imagine you had to pay a lifetime of power bills all at once
+        And
+        that's just if the new drug is a lifelong treatment. If the new treatment is a permanent cure for the
+        disease,
+        replacing a lifetime of refills with a one time purchase would be economically disastrous. How is there any
+        financial incentive for medical progress at all?
+    </p>
+    <p>
+        Fortunately, we don't have a complete monopoly on treatment development. However, the more expensive it is,
+        the fewer participants
+        can afford to be in that business. So it inevitably becomes more monopolistic and there arise more of these
+        situations where the cost of trials exceeds the profits from selling the drug.
+    </p>
+    <h4>People With Rare Disease are Particularly Screwed</h4>
+    <p>
+        In the case of rare diseases, increasing the cost of treatment development to over a billion makes it
+        impossible
+        to recover your investment from a small number of patients. So rare disease patients are
+        suffer the greatest harm from the added regulatory burden on development.
+    </p>
+    <h4>People With Rare Disease are Particularly Screwed</h4>
+    <p>
+        How high should the cost of drug development be on our list of human problems?
+        Well, when something costs more, you get less of it. For people who are dying of cancer,
+        the fact that we couldn't afford enough research to cure them is definitely
+        at the top of their list of human problems.
+    </p>
+    <h2>Correlation is Not Causation</h2>
+    <p>
+        You might say "I don't know how much the FDA contributes to or hampers public health. I do know that
+        correlation
+        does not necessarily imply causation."
+        However, a correlation plus a logical mechanism of action is the least bad method we have for inferring the
+        most
+        likely
+        significant causal factor for an outcome (i.e. life expectancy). Assuming most likely causality based on
+        temporal correlation is the entire basis of a clinical research study and the scientific method generally.
+    </p>
+    <h2>Diminishing Returns?</h2>
+    <p>
+        You might say "It seems more likely -- or as likely -- to me that drug development provides diminishing
+        returns
+        to life expectancy."
+        However, diminishing returns produce a slope of exponential decay.
+        It may be partially responsible, but it's not going to produce a sudden change in the linear slope of a
+        curve
+        a linear as life expectancy was before and after the FDA.
+    </p>
+    <img src="law_of_diminishing_returns.gif" alt="Law of diminishing returns">
+    <p>
+        Additionally, we're only 3 lifetimes from George Washington. The modern scientific method has only been
+        systematically applied to medicine for like .0001% of human history.
+        However, the more clinical research studies I read, the more I realize we don't know.
+        We know basically nothing at this point compared to what will eventually be known about the human body.
+        And the currently highly
+        restrictive overly cautious method of clinical research prevents us from knowing more faster.
+        We're at the very beginning of thousands or millions of years of
+        systematic discovery. So it's unlikely that this decline in lifespan growth is the result of diminishing
+        returns due to our running out
+        of things to discover.
+    </p>
+    <h2>It Costs $2837 in Pharmaceutical Spending to Save 1 Year of Life</h2>
+    <p>
+        The estimates imply that, if no new drugs had been launched after 1981, YLL85 in 2013 would have been 2.16 times
+        as high as it actually was. We estimated that pharmaceutical expenditure per life-year saved before age 85 y in
+        2013 by post-1981 drugs was $2837. This amount is about 8% of per capita GDP, indicating that post-1981 drugs
+        launched were very cost-effective overall. But the fact that an intervention is cost-effective does not
+        necessarily mean that it is ‘affordable.’
+        - https://academic.oup.com/inthealth/article/11/5/403/5420236
+    </p>
+    <h2 class="">Measuring the Impact of Innovative Medicines on Life Expectancy</h2>
+    <a href="http://valueofinnovation.org/power-of-innovation/" target="_blank">
+        <img class="inlineImage"
+             src="http://valueofinnovation.org/assets/images/power-of-innovation/disease-causing-death-shift.gif"
+             alt="Graph showing the shift in relative mortality among major diseases over 60 years."
+             title="Fewer Deaths From Major Diseases">
+    </a>
+    <h2 class="">New Cancer Therapies: More Survivors</h2>
+    <a href="http://valueofinnovation.org/power-of-innovation/" target="_blank">
+        <img class="inlineImage"
+             src="http://valueofinnovation.org/assets/images/power-of-innovation/more-surviving-more-therapies.gif"
+             alt="Graph showing the correlation of developing new cancer treatments and cancer survival over 30 years."
+             title="More People Survive as More Treatments are Developed">
+    </a>
+    <h2>Growth in Average Lifespan Has Now Completely Stopped</h2>
+    <p>
+        The strongest contributing factor for this has been the explosion in cost of treatment development.
+        The biggest driver of this phenomenal increase has been the regulatory process governing Phase III clinical
+        trials of new pharmaceuticals on human volunteers. One reason: Phase III clinical trials have become far
+        larger and more complex than they were in the past.
+    </p>
+    <p>
+        From 1999 to 2005, the average
+    </p>
+    <ul>
+        <li>
+            length of a clinical trial increased 70%
+        </li>
+        <li>
+            number of routine procedures per trial increased 65%
+        </li>
+        <li>
+            clinical trial staff work burden increased 67%
+        </li>
+    </ul>
+    <p>
+        On top of that, increasingly stringent enrollment criteria and trial protocols resulted in
+    </p>
+    <ul>
+        <li>
+            21 percent fewer volunteers being admitted into trials
+        </li>
+        <li>
+            30 percent more enrollees dropping out before completion of the tests.
+        </li>
+    </ul>
+    <h3>How Many People Have Died Prematurely Due to Prevented Treatments?</h3>
+    <p> Deaths owing to drug lag have been numbered in the hundreds of thousands.
+        <a href="https://www.fdareview.org/features/references/#wardell78a">Wardell (1978a)</a>
+        estimated that practolol, a drug in the beta-blocking family, could save ten thousand lives a year if allowed in
+        the United States. Although the FDA allowed a first beta-blocker, propranolol, in 1968, three years after that
+        drug had been available in Europe, it waited until 1978 to allow the use of propranolol for the treatment of
+        hypertension and angina pectoris, its most important indications. Despite clinical evidence as early as 1974,
+        only in 1981 did the FDA allow a second beta-blocker, timolol, for prevention of a second heart attack. The
+        agency’s withholding of beta-blockers was alone responsible for probably tens of thousands of deaths (on this
+        general issue see
+        <a href="https://www.fdareview.org/features/references/#gieringer85">Gieringer 1985</a>
+        ;
+        <a href="https://www.fdareview.org/features/references/#kazman90">Kazman 1990</a>
+        ).
+    </p>
+    <p> A chief source of information about drug delay is the Tufts Center for the Study of Drug Development, a
+        scholarly, not too outspoken research center funded chiefly by pharmaceutical companies. Their information is
+        often mined by researchers at the
+        <a href="http://www.cei.org" onclick="javascript:window.open('http://www.cei.org/'); return false;">Competitive
+                                                                                                            Enterprise
+                                                                                                            Institute
+                                                                                                            (CEI)
+        </a>
+        . The CEI has noted that in recent years thousands of patients have died because the FDA has delayed the arrival
+        of new drugs and devices, including interleukin-2, taxotere, vasoseal, ancrod, glucophage, navelbine, lamictal,
+        ethyol, photofrin, rilutek, citicoline, panorex, femara, prostar, omnicath, and transform. Prior to FDA
+        approval, most of these drugs and devices had already been available in other countries for a year or longer.
+    </p>
+    <p>
+        <a href="https://www.fdareview.org/features/references/#gieringer85">Gieringer (1985)</a>
+        used data on drug disasters in countries with less-stringent drug regulations than the United States to create a
+        ballpark estimate of the number of lives saved by the extra scrutiny induced by FDA requirements. He then
+        computed a similar ballpark figure for the number of lives lost owing to drug delay:
+    </p>
+    <blockquote>
+        <p>
+            [T]he benefits of FDA regulation relative to that in foreign countries could reasonably be put at some 5,000
+            casualties per decade or 10,000 per decade for worst-case scenarios. In comparison, it has been argued above
+            that the cost of FDA delay can be estimated at anywhere from 21,000 to 120,000 lives per decade. . . . Given
+            the uncertainties of the data, these results must be interpreted with caution, although it seems clear that
+            the costs of regulation are substantial when compared to benefits. (196)
+        </p>
+    </blockquote>
+    <p>
+        Note three things about the foregoing passage. (1) The comparison is between the FDA and the foreign systems of
+        drug control. (2) The relative benefits of the FDA are expressed in number of casualties, whereas the relative
+        costs are in number of lives. (3) In addressing the costs, Gieringer estimated the costs only from drug delay;
+        he does not attempt to quantify the costs associated with drug loss. Nevertheless, his conclusion is clear: the
+        FDA is responsible for more lives lost than lives saved.
+    </p>
+    <div>
+        <h1>Sources</h1>
+        <ul>
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBkVrOYLxloOIADLXA7-k5NBIGgQ_dfFQ7BLUN0oaJPVQ_NqdFdVUfhuPkVWgFZ9gfLrwPdjuG1sTn/pubhtml"
+                   target="_blank">
+                    Google Spreadsheet of FDA Spending vs Life-Expectancy
+                </a>
+            </li>
+            <li>
+                <a href="https://www.fda.gov/about-fda/histories-product-regulation/summary-nda-approvals-receipts-1938-present"
+                   target="_blank">
+                    Summary of NDA Approvals & Receipts, 1938 to the present
+                </a>
+            </li>
+            <li>
+                <a href="https://www.fdareview.org/issues/theory-evidence-and-examples-of-fda-harm/"
+                   target="_blank">
+                    Theory, Evidence and Examples of FDA Harm
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/1hltgVd8OO_nfd9m7FUbbsOTXFX4VbDKuFNw4Cy43f7Q/edit#gid=0"
+                   target="_blank">
+                    DATA
+                </a>
+            </li>
+            <li>
+                <a href="https://ourworldindata.org/economic-growth" target="_blank">
+                    GDP
+                </a>
+            </li>
+            <li>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4101807/"
+                   target="_blank">
+                    Reform, Regulation, and Pharmaceuticals — The Kefauver–Harris Amendments at 50
+                </a>
+            </li>
+            <li>
+                <a href="https://www.bls.gov/regions/midwest/data/consumerpriceindexhistorical_us_table.pdf"
+                   target="_blank">
+                    Consumer Price Index
+                </a>
+            </li>
+            <li>
+                <a href="https://delong.typepad.com/print/20061012_LRWGDP.pdf" target="_blank">
+                    Estimates of World GDP, One Million B.C. – Present
+                </a>
+            </li>
+            <li>
+                <a href="https://newspaper.jaguarpaw.co.uk/" target="_blank">
+                    Newspaper Generator
+                </a>
+            </li>
+            <li>
+                <a href="https://www.amplion.com/report-suggests-drug-approval-rate-now-just-1-in-10/" target="_blank">
+                    Report suggests drug-approval rate now just 1-in-10
+                </a>
+            </li>
+            <li>
+                <a href="https://ourworldindata.org/births-and-deaths" target="_blank">
+                    How many people die and how many are born each year?
+                </a>
+            </li>
+            <li>
+                <a href="http://statisticstimes.com/economy/gross-world-product-capita.php" target="_blank">
+                    Gross World Product per capita
+                </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Clinical_trial#History" target="_blank">
+                    History of Clinical Trials
+                </a>
+            </li>
+            <li>
+                <a href="https://academic.oup.com/inthealth/article/11/5/403/5420236" target="_blank">
+                    How many life-years have new drugs saved?
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cato.org/publications/commentary/end-fda-drug-monopoly-let-patients-choose-their-medicines" target="_blank">
+                   CATO
+                </a>
+            </li>
+            <li>
+                <a href="http://valueofinnovation.org/" target="_blank">
+                    Medical Innovation
+                </a>
+            </li>
+            <li>
+                <a href="https://www.timetoast.com/timelines/history-of-clinical-research" target="_blank">
+                    Timeline History of Clinical Research
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText">Some text in the Modal..</p>
+    </div>
+</div>
+</body>
+<script src="../human-well-being.js"></script>
+</html>
